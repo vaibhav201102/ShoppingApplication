@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Commercial</string>
+    <string name="email">User Id</string>
+    <string name="pass">Password</string>
+    <string name="Btn">LOGIN</string>
+    <string name="register">Register Your Account Here</string>
+    <string name="semail">Email ID</string>
+    <string name="name">Name</string>
+    <string name="cpass">Confirm Password</string>
+    <string name="con">Contact Number</string>
+    <string name="Dob">DOB</string>
+    <string name="price_symbol">₹</string>
+    <string name="product">Product</string>
+    <string name="view_all">View All</string>
+    <string name="category">Category</string>
+    <string name="welcome">Welcome</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="city">City</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_out">Log Out</string>
+    <string name="chat">Chat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

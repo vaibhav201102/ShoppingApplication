@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/bg_image2"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homeactivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/home_title"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border2"
+                style="@style/common_edittext"/>
+
+            <RelativeLayout
+                android:padding="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp">
+
+                <TextView
+                    android:id="@+id/home_view"
+                    style="@style/common_edittext"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:background="@drawable/custom_border2"
+                    android:text="@string/view_all"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    style="@style/common_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="13dp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_toStartOf="@id/home_view"
+                    android:background="@drawable/custom_border2"
+                    android:text="@string/product"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_product_recycle"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+
+            <RelativeLayout
+                android:padding="@dimen/_7sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp">
+                <TextView
+                    android:text="@string/category"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_border2"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="13dp"
+                    style="@style/common_edittext"/>
+
+            </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_recycle"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
